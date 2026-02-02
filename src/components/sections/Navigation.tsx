@@ -59,9 +59,11 @@ export function Navigation() {
           <div className="hidden lg:flex items-center gap-4">
             <Button
               className="bg-[#7c3aed] hover:bg-[#6d28d9] text-white rounded-full px-6"
-              onClick={() => document.getElementById('cta')?.scrollIntoView({ behavior: 'smooth' })}
+              asChild
             >
-              Book Free Call
+              <a href="https://calendly.com/inpresspr/30min" target="_blank" rel="noopener noreferrer">
+                Book Free Call
+              </a>
             </Button>
           </div>
 
@@ -95,12 +97,11 @@ export function Navigation() {
               <div className="px-4 pt-4 border-t border-border mt-2">
                 <Button
                   className="w-full bg-[#7c3aed] hover:bg-[#6d28d9] text-white rounded-full"
-                  onClick={() => {
-                    setIsMobileMenuOpen(false);
-                    document.getElementById('cta')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
+                  asChild
                 >
-                  Book Free Call
+                  <a href="https://calendly.com/inpresspr/30min" target="_blank" rel="noopener noreferrer">
+                    Book Free Call
+                  </a>
                 </Button>
               </div>
             </div>

@@ -40,10 +40,12 @@ export function Hero() {
           <Button
             size="lg"
             className="bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-8 py-6 text-lg rounded-full group"
-            onClick={() => document.getElementById('cta')?.scrollIntoView({ behavior: 'smooth' })}
+            asChild
           >
-            See What AI Can Do For You
-            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <a href="https://calendly.com/inpresspr/30min" target="_blank" rel="noopener noreferrer">
+              See What AI Can Do For You
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
           </Button>
           <Button
             variant="outline"

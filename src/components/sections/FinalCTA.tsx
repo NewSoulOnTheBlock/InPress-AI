@@ -35,9 +35,12 @@ export function FinalCTA() {
         <Button
           size="lg"
           className="bg-white text-[#7c3aed] hover:bg-gray-100 px-10 py-7 text-lg rounded-full font-semibold group shadow-xl"
+          asChild
         >
-          Book My Free Strategy Call
-          <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          <a href="https://calendly.com/inpresspr/30min" target="_blank" rel="noopener noreferrer">
+            Book My Free Strategy Call
+            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </a>
         </Button>
 
         {/* Trust elements */}
