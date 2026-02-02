@@ -1,0 +1,13 @@
+export { Navigation } from './Navigation';
+export { Hero } from './Hero';
+export { PainPoints } from './PainPoints';
+export { AgentTypes } from './AgentTypes';
+export { HowItWorks } from './HowItWorks';
+export { ROICalculator } from './ROICalculator';
+export { ComparisonTable } from './ComparisonTable';
+export { Industries } from './Industries';
+export { Testimonials } from './Testimonials';
+export { Pricing } from './Pricing';
+export { FAQ } from './FAQ';
+export { FinalCTA } from './FinalCTA';
+export { Footer } from './Footer';
