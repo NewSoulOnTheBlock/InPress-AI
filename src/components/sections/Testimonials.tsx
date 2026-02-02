@@ -1,29 +1,32 @@
 "use client";
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Quote } from "lucide-react";
+import { Quote, MapPin } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "I was drowning in emails and missing leads left and right. Now our AI handles 80% of inquiries instantly. I got my evenings back.",
-    author: "Sarah Chen",
-    role: "Owner, Serenity Spa",
+    quote: "I was drowning in emails and missing leads left and right. Now our AI handles 80% of inquiries instantly. I got my evenings back to spend with family.",
+    author: "Maria Gonzalez",
+    role: "Owner, Bella Spa Houston",
+    location: "Galleria Area",
     metric: "15 hours/week saved",
-    avatar: "SC",
+    avatar: "MG",
   },
   {
-    quote: "Our response time went from 4 hours to 4 seconds. Our customers noticed immediately — reviews went through the roof.",
+    quote: "Our response time went from 4 hours to 4 seconds. Houston customers expect fast service — now we deliver it 24/7 without hiring a night shift.",
     author: "Marcus Thompson",
-    role: "Founder, Thompson Legal",
+    role: "Founder, Thompson Legal Group",
+    location: "Downtown Houston",
     metric: "4.9★ average rating",
     avatar: "MT",
   },
   {
-    quote: "I was skeptical about AI. But the ROI speaks for itself — we closed 3x more leads in the first month. Best investment we made.",
-    author: "Jennifer Rodriguez",
-    role: "Broker, Coastal Realty",
+    quote: "I was skeptical about AI. But the ROI speaks for itself — we closed 3x more leads in the first month. Best investment I've made for my brokerage.",
+    author: "Jennifer Nguyen",
+    role: "Broker, Bayou City Realty",
+    location: "The Heights",
     metric: "3x lead conversion",
-    avatar: "JR",
+    avatar: "JN",
   },
 ];
 
@@ -33,10 +36,10 @@ export function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            What Business Owners <span className="text-gradient">Say</span>
+            What Houston Business Owners <span className="text-gradient">Say</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Real results from real small businesses — just like yours.
+            Real results from real Houston businesses — and not a single one has left.
           </p>
         </div>
 
@@ -71,6 +74,10 @@ export function Testimonials() {
                   <div>
                     <p className="font-semibold text-sm">{testimonial.author}</p>
                     <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                    <p className="text-xs text-muted-foreground flex items-center gap-1">
+                      <MapPin className="w-3 h-3" />
+                      {testimonial.location}
+                    </p>
                   </div>
                 </div>
               </CardContent>

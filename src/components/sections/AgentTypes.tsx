@@ -1,7 +1,21 @@
 "use client";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Headphones, Calendar, Zap, Package, Mail } from "lucide-react";
+import {
+  Headphones,
+  Calendar,
+  Zap,
+  Package,
+  Mail,
+  MessageSquare,
+  Star,
+  FileText,
+  DollarSign,
+  Users,
+  Bell,
+  ShoppingCart,
+  Phone
+} from "lucide-react";
 
 const agents = [
   {
@@ -39,6 +53,62 @@ const agents = [
     features: ["Smart inbox sorting", "Draft responses", "Priority flagging"],
     color: "#7c3aed",
   },
+  {
+    icon: MessageSquare,
+    title: "Social Media Agent",
+    description: "Responds to DMs, comments, and mentions across all your social platforms.",
+    features: ["Instagram & Facebook DMs", "Comment moderation", "Engagement tracking"],
+    color: "#14b8a6",
+  },
+  {
+    icon: Star,
+    title: "Review Management Agent",
+    description: "Monitors reviews, responds professionally, and alerts you to issues fast.",
+    features: ["Google & Yelp monitoring", "Automated responses", "Sentiment analysis"],
+    color: "#7c3aed",
+  },
+  {
+    icon: FileText,
+    title: "Quote & Estimate Agent",
+    description: "Generates accurate quotes instantly based on your pricing rules.",
+    features: ["Instant pricing", "Custom proposals", "Follow-up automation"],
+    color: "#14b8a6",
+  },
+  {
+    icon: DollarSign,
+    title: "Invoice & Payment Agent",
+    description: "Sends invoices, tracks payments, and follows up on overdue accounts.",
+    features: ["Auto-invoicing", "Payment reminders", "Collections follow-up"],
+    color: "#7c3aed",
+  },
+  {
+    icon: Users,
+    title: "Onboarding Agent",
+    description: "Welcomes new customers and guides them through your process step-by-step.",
+    features: ["Welcome sequences", "Document collection", "Training delivery"],
+    color: "#14b8a6",
+  },
+  {
+    icon: Bell,
+    title: "Appointment Reminder Agent",
+    description: "Sends timely reminders via text, email, or call to reduce no-shows.",
+    features: ["Multi-channel reminders", "Confirmation requests", "Reschedule handling"],
+    color: "#7c3aed",
+  },
+  {
+    icon: ShoppingCart,
+    title: "E-commerce Support Agent",
+    description: "Handles product questions, order tracking, and returns 24/7.",
+    features: ["Product recommendations", "Order tracking", "Return processing"],
+    color: "#14b8a6",
+  },
+  {
+    icon: Phone,
+    title: "After-Hours Agent",
+    description: "Captures leads and handles urgent requests when you&apos;re closed.",
+    features: ["24/7 availability", "Emergency routing", "Lead capture"],
+    color: "#7c3aed",
+  },
 ];
 
 export function AgentTypes() {
@@ -55,27 +125,27 @@ export function AgentTypes() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {agents.map((agent, index) => (
             <Card
               key={agent.title}
               className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-[#7c3aed]/30 overflow-hidden"
-              style={{ animationDelay: `${index * 100}ms` }}
+              style={{ animationDelay: `${index * 50}ms` }}
             >
               <CardHeader className="pb-4">
                 <div
-                  className="w-14 h-14 rounded-2xl flex items-center justify-center mb-4 transition-transform group-hover:scale-110"
+                  className="w-12 h-12 rounded-xl flex items-center justify-center mb-3 transition-transform group-hover:scale-110"
                   style={{ backgroundColor: `${agent.color}15` }}
                 >
-                  <agent.icon className="w-7 h-7" style={{ color: agent.color }} />
+                  <agent.icon className="w-6 h-6" style={{ color: agent.color }} />
                 </div>
-                <CardTitle className="text-xl">{agent.title}</CardTitle>
-                <CardDescription className="text-base">{agent.description}</CardDescription>
+                <CardTitle className="text-lg">{agent.title}</CardTitle>
+                <CardDescription className="text-sm">{agent.description}</CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2">
+                <ul className="space-y-1.5">
                   {agent.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-2 text-sm">
+                    <li key={feature} className="flex items-center gap-2 text-xs">
                       <div className="w-1.5 h-1.5 rounded-full bg-[#14b8a6]" />
                       {feature}
                     </li>

@@ -1,12 +1,12 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, Clock, Sparkles } from "lucide-react";
+import { ArrowRight, Shield, Clock, Heart, MapPin } from "lucide-react";
 
 const trustElements = [
   { icon: Shield, text: "30-day money-back guarantee" },
   { icon: Clock, text: "Get started in 1-2 weeks" },
-  { icon: Sparkles, text: "No technical skills required" },
+  { icon: Heart, text: "0% client churn — ever" },
 ];
 
 export function FinalCTA() {
@@ -21,14 +21,24 @@ export function FinalCTA() {
       <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        {/* Location badge */}
+        <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-8">
+          <MapPin className="w-4 h-4 text-white" />
+          <span className="text-sm font-medium text-white">Houston, Texas</span>
+        </div>
+
         {/* Headline */}
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
-          Ready to Stop Drowning in<br />Busywork?
+          Give Us One Chance.<br />You&apos;ll Never Look Back.
         </h2>
 
-        <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-          Let&apos;s build your AI team together. Book a free strategy call and
-          see exactly how automation can transform your business.
+        <p className="text-xl text-white/90 mb-4 max-w-2xl mx-auto">
+          We&apos;re so confident in our work that we guarantee results.
+          Every Houston business that&apos;s tried us has stayed with us.
+        </p>
+
+        <p className="text-lg text-white/70 mb-10 max-w-xl mx-auto">
+          Book a free strategy call. If we can&apos;t show you a clear path to ROI, we&apos;ll tell you — no hard sell, ever.
         </p>
 
         {/* CTA Button */}
@@ -55,11 +65,11 @@ export function FinalCTA() {
 
         {/* Social proof */}
         <div className="mt-16 pt-10 border-t border-white/20">
-          <p className="text-white/70 text-sm mb-4">Trusted by 500+ small businesses</p>
+          <p className="text-white/70 text-sm mb-4">Trusted by 100+ Houston businesses</p>
           <div className="flex items-center justify-center gap-2">
             {/* Avatar stack */}
             <div className="flex -space-x-3">
-              {["SC", "MT", "JR", "AK", "LP"].map((initials, i) => (
+              {["MG", "MT", "JN", "RD", "LP"].map((initials, i) => (
                 <div
                   key={i}
                   className="w-10 h-10 rounded-full bg-white/20 border-2 border-white flex items-center justify-center text-white text-xs font-semibold"
@@ -74,7 +84,7 @@ export function FinalCTA() {
                   <span key={i}>{star}</span>
                 ))}
               </div>
-              <p className="text-white/80 text-sm">4.9/5 from 200+ reviews</p>
+              <p className="text-white/80 text-sm">100% client retention</p>
             </div>
           </div>
         </div>

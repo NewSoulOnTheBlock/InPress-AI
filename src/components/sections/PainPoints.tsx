@@ -6,22 +6,22 @@ const painPoints = [
   {
     icon: Mail,
     title: "Drowning in Emails",
-    description: "Your inbox is overflowing. Important messages get buried. Customers wait days for responses.",
+    description: "Your inbox is overflowing. Important messages get buried. Houston customers wait days for responses.",
   },
   {
     icon: Users,
     title: "Can't Afford Staff",
-    description: "Hiring is expensive. Training takes forever. And good help is impossible to find.",
+    description: "Hiring in Houston is expensive. Training takes forever. And good help is hard to find.",
   },
   {
     icon: PhoneOff,
     title: "Missing Leads",
-    description: "Potential customers reach out at 10pm. By morning, they've gone to your competitor.",
+    description: "Potential customers reach out at 10pm. By morning, they've called your competitor down the street.",
   },
   {
     icon: Clock,
     title: "Repetitive Tasks Eating Your Day",
-    description: "Scheduling, follow-ups, order updates — you're doing the same things over and over.",
+    description: "Scheduling, follow-ups, order updates — you're doing the same things over and over instead of growing.",
   },
 ];
 
@@ -31,10 +31,10 @@ export function PainPoints() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Sound Familiar?
+            Sound Familiar, Houston?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Small business owners lose countless hours to tasks that AI can handle instantly.
+            Houston business owners lose countless hours to tasks that AI can handle instantly.
           </p>
         </div>
 
@@ -56,7 +56,7 @@ export function PainPoints() {
 
         <div className="text-center mt-12">
           <p className="text-xl font-medium text-gradient">
-            There&apos;s a better way.
+            There&apos;s a better way — and Houston businesses are already using it.
           </p>
         </div>
       </div>

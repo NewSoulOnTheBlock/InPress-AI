@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Bot, Sparkles } from "lucide-react";
+import { ArrowRight, Bot, Sparkles, MapPin } from "lucide-react";
 
 export function Hero() {
   return (
@@ -16,10 +16,10 @@ export function Hero() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-        {/* Badge */}
+        {/* Location Badge */}
         <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-[#7c3aed]/20 rounded-full px-4 py-2 mb-8 animate-fade-in-up">
-          <Sparkles className="w-4 h-4 text-[#7c3aed]" />
-          <span className="text-sm font-medium text-[#7c3aed]">Your AI Team. Fraction of the Cost.</span>
+          <MapPin className="w-4 h-4 text-[#7c3aed]" />
+          <span className="text-sm font-medium text-[#7c3aed]">Proudly Serving Houston, Texas</span>
         </div>
 
         {/* Main headline */}
@@ -30,9 +30,15 @@ export function Hero() {
         </h1>
 
         {/* Subheadline */}
-        <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-fade-in-up delay-200">
+        <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 animate-fade-in-up delay-200">
           AI agents that handle customer service, scheduling, and lead follow-up —
-          so you can focus on growing your business, not managing it.
+          built specifically for Houston business owners.
+        </p>
+
+        {/* Trust statement */}
+        <p className="text-base text-[#7c3aed] font-medium max-w-xl mx-auto mb-8 animate-fade-in-up delay-200">
+          <Sparkles className="w-4 h-4 inline mr-1" />
+          Give us one chance to earn your business. You&apos;ll never want to leave.
         </p>
 
         {/* CTA Buttons */}
@@ -59,11 +65,11 @@ export function Hero() {
 
         {/* Trust indicators */}
         <div className="mt-16 animate-fade-in-up delay-400">
-          <p className="text-sm text-muted-foreground mb-4">Trusted by small businesses everywhere</p>
+          <p className="text-sm text-muted-foreground mb-4">Trusted by Houston business owners</p>
           <div className="flex items-center justify-center gap-8 flex-wrap">
             <div className="flex items-center gap-2">
               <Bot className="w-5 h-5 text-[#7c3aed]" />
-              <span className="text-sm font-medium">500+ AI Agents Deployed</span>
+              <span className="text-sm font-medium">100+ Houston Businesses</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl">4.9</span>
@@ -74,7 +80,7 @@ export function Hero() {
               </div>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-sm font-medium">$2M+ Saved for Clients</span>
+              <span className="text-sm font-medium">0% Client Churn Rate</span>
             </div>
           </div>
         </div>
