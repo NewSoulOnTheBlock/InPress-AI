@@ -6,32 +6,32 @@ const industries = [
   {
     icon: Scissors,
     name: "Service Businesses",
-    examples: "Salons, spas, cleaning services, contractors",
+    examples: "Houston salons, spas, cleaning services, contractors",
   },
   {
     icon: Briefcase,
     name: "Professional Services",
-    examples: "Law firms, accountants, consultants, agencies",
+    examples: "Law firms, CPAs, consultants, marketing agencies",
   },
   {
     icon: Heart,
     name: "Health & Wellness",
-    examples: "Clinics, therapists, gyms, wellness centers",
+    examples: "Med spas, therapists, gyms, wellness centers",
   },
   {
     icon: ShoppingCart,
-    name: "E-commerce",
-    examples: "Online stores, subscription boxes, marketplaces",
+    name: "E-commerce & Retail",
+    examples: "Online stores, boutiques, specialty shops",
   },
   {
     icon: Home,
     name: "Real Estate",
-    examples: "Agents, property managers, brokerages",
+    examples: "Houston agents, property managers, brokerages",
   },
   {
     icon: UtensilsCrossed,
-    name: "Restaurants",
-    examples: "Cafes, catering, food trucks, bars",
+    name: "Restaurants & Food",
+    examples: "Cafes, catering, food trucks, Tex-Mex spots",
   },
 ];
 
@@ -41,10 +41,10 @@ export function Industries() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Industries We <span className="text-gradient">Serve</span>
+            Houston Industries We <span className="text-gradient">Serve</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Our AI agents adapt to your industry&apos;s unique needs and terminology.
+            Our AI agents adapt to your industry&apos;s unique needs — whether you&apos;re in the Energy Corridor or the Heights.
           </p>
         </div>
 
@@ -68,7 +68,16 @@ export function Industries() {
 
         <div className="text-center mt-12">
           <p className="text-muted-foreground">
-            Don&apos;t see your industry? <span className="text-[#7c3aed] font-medium cursor-pointer hover:underline">Let&apos;s talk</span> — we probably serve it.
+            Don&apos;t see your Houston industry?{" "}
+            <a
+              href="https://calendly.com/inpresspr/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#7c3aed] font-medium hover:underline"
+            >
+              Let&apos;s talk
+            </a>{" "}
+            — we probably serve it.
           </p>
         </div>
       </div>

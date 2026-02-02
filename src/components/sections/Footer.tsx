@@ -34,10 +34,10 @@ export function Footer() {
               <div className="w-10 h-10 rounded-xl gradient-purple-teal flex items-center justify-center">
                 <Bot className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xl font-bold">[BUSINESS NAME]</span>
+              <span className="text-xl font-bold">InPress</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-sm">
-              Your AI Team. Fraction of the Cost. We help small businesses
+              Your AI Team. Fraction of the Cost. Helping Houston business owners
               automate the busywork so they can focus on growth.
             </p>
 
@@ -49,11 +49,11 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-[#14b8a6]" />
-                <span className="text-sm">(555) 123-4567</span>
+                <span className="text-sm">(713) 555-0123</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-[#14b8a6]" />
-                <span className="text-sm">San Francisco, CA</span>
+                <span className="text-sm">Houston, Texas</span>
               </div>
             </div>
           </div>
@@ -113,7 +113,7 @@ export function Footer() {
         {/* Bottom section */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} [BUSINESS NAME]. All rights reserved.
+            © {new Date().getFullYear()} InPress. All rights reserved. Proudly based in Houston, TX.
           </p>
 
           {/* Powered by badge */}

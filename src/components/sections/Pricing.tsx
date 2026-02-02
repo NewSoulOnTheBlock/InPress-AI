@@ -122,9 +122,11 @@ export function Pricing() {
                       ? "bg-[#7c3aed] hover:bg-[#6d28d9] text-white"
                       : "bg-white hover:bg-muted text-foreground border-2 border-border"
                   }`}
-                  onClick={() => document.getElementById('cta')?.scrollIntoView({ behavior: 'smooth' })}
+                  asChild
                 >
-                  {plan.cta}
+                  <a href="https://calendly.com/inpresspr/30min" target="_blank" rel="noopener noreferrer">
+                    {plan.cta}
+                  </a>
                 </Button>
               </CardContent>
             </Card>
